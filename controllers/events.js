@@ -8,7 +8,7 @@ const getEventos = async( req, res = response ) => {
 
         res.status(200).json({
             ok: true,
-            msg: eventos
+            eventos,
         });
     } catch (error) {
         console.log(error);
@@ -108,7 +108,7 @@ const eliminarEvento = async( req, res = response ) => {
 
         res.status(200).json({
             ok: true,
-            eventoEliminado
+            evento: eventoEliminado
         });
     } catch (error) {
         console.log(error);
